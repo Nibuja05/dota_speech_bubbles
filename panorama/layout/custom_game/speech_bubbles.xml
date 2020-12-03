@@ -1,0 +1,24 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/speech_bubbles.js" />
+    </scripts>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/custom_game/speech_bubbles.css" />
+    </styles>
+
+    <snippets>
+		<snippet name="SpeechBubble">
+			<Panel class="BubblesMain">
+                <Panel class="BubblesBody">
+                    <Label id="BubblesText" />
+                </Panel>
+				<Panel class="BubblesLink" />
+			</Panel>
+		</snippet>
+    </snippets>
+
+    <Panel hittest="false" class="BubblesBase">
+        <Panel id="BubblesScreen" />
+    </Panel>
+</root>
